@@ -7,4 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('menu/', menu, name='menu'),
+    path('harga/', harga, name='harga'),
 ]

@@ -6,3 +6,6 @@ def index(request):
 
 def menu(request):
     return render(request, 'kedai/menu.html')
+
+def harga(request):
+    return render(request, 'kedai/harga.html')
