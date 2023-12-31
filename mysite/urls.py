@@ -5,7 +5,9 @@ from kedai.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('menu/', menu, name='menu'),
-    path('logo/', logo, name='logo'),
+    path('', menu, name='menu'),
+    path('login/', login, name='login'),
+    path('contact/', contact, name='contact'),
+ 
     
 ]

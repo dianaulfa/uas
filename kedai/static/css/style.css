@@ -19,12 +19,22 @@ html {
 }
 
 .li-navbar {
-    border: 1px solid white;
-    background-color: white;
     list-style: none;
     padding: 10px;
     margin: 5px;
     color: white;
+}
+
+.li-navbar:hover {
+    background-color: grey;
+    transition: .1s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 4px;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
 }
 
 .container-footer {
