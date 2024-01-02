@@ -1,9 +1,73 @@
 {%load static%}
-<html>
-    <head>
-        <title>contact</title>
-    </head>
-    <body>
-        <h1>silahkan hubungi saya</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>connect with us</h1>
+        <p>we would love to respond to your queries and help you succeed. feel
+            free to get in touch with us</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>sent your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>nama</label>
+                                <input type="text" placeholder="diana">
+                            </div>
+
+                            <div class="input-group">
+                                <label>phone</label>
+                                <input type="text" placeholder="+62">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>E-mail</label>
+                                <input type="text" 
+                                placeholder="diana@gmail.com">
+                            </div>
+
+                            <div class="input-group">
+                                <label>subject</label>
+                                <input type="text" placeholder="makanan">
+                            </div>
+                        </div>
+
+                        <label>message</label>
+                        <textarea rows="5" placeholder="your message"></textarea>
+                        
+                        <button type="submit">send</button>
+                    </form>
+                    
+                </div>
+                <div class="contact-right">
+                    <h3>reach us</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>no.tlp</td>
+                            <td>+62-2377882</td>
+                        </tr>
+                        <tr>
+                            <td>alamat</td>
+                            <td>pamekasan</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+    </div>
+</body>
 </html>

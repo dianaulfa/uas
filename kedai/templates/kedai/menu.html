@@ -3,10 +3,11 @@
     <head>
         <title>web saya</title>
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'img/satay.png' %}">
     </head>
     <body>
+        <H1>MENU MAKANAN</H1>
         <div class="container" >
-        <!--navigation bar-->
         <div class="navbar-container">
             <ul class="ul-navbar">
                 <li class="li-navbar"><a href="login" class="a-navbar">LOGIN</a></li>
@@ -14,19 +15,29 @@
                 <li class="li-navbar"><a href="contact" class="a-navbar">CONTACT</a></li>
             </ul>
         </div>
-        <!--navigation bar selesai-->
 
-        <!--content1-->
-        <div>
-            
-        </div>
-        <!--content 1 end-->
+        <div class="container">
+            <main class="grid">
+                <article>
+                    <img src="{% static 'img/satay.png' %}" alt="sate" width="300">
+                    <div class="konten">
+                        <h2>SATE GOLE</h2>
+                    </div>
+                </article>
+                <article>
+                    <img src="{% static 'img/rendang.png' %}" alt="sate" width="300">
+                    <div class="konten">
+                        <h2>MIE AYAM</h2>
+                    </div>
+                </article>
+                <article>
+                    <img src="{% static 'img/bakso.png' %}" alt="sate" width="300">
+                    <div class="konten">
+                        <h2>BAKSO BERANAK</h2>
+                    </div>
+                </article>
+            </main>
 
-        <!--footer-->
-        <div class="container-footer">
-            <h1 class="h1-footer">terima kasi </h1>
-        </div>
-        <!--foter end-->
-        </div>
+    </div>
     </body>
 </html>

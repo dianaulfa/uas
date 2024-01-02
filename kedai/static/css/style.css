@@ -14,8 +14,9 @@ html {
 .ul-navbar {
     display: flex;
     height: 100px;
-    justify-content: center;
+    justify-content: space space-between;
     align-items: center;
+    
 }
 
 .li-navbar {
@@ -28,7 +29,7 @@ html {
 .li-navbar:hover {
     background-color: grey;
     transition: .1s ease-in-out;
-    transition-delay: .3s;
+    transition-delay: .2s;
     border-radius: 4px;
 }
 
@@ -46,6 +47,39 @@ html {
    
 }
 
-.h1-footer {
-    font-size: 50px;
+body {
+    background: rgb(138, 138, 206);
 }
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px;
+    align-items: center;
+    grid-gap: 30px;
+}
+img{
+    object-fit: cover;
+}
+.grid > article{
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 30px;
+    text-align: center; 
+    background: whitesmoke;
+    width: 300px;
+    transition: transform;   
+}
+
+.grid > article img{
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.grid > article:hover{
+   
+    transform: scale(1.2);
+    
+}
+
